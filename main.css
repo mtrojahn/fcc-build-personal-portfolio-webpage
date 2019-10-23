@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(40, 42, 54);
+    color: #ffffff;
+}
+
+@media (max-width: 75em) {
+    body {
+        font-family: "Roboto", sans-serif;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333591;
+    height: 80px;
+    z-index: 99;
+}
+.nav > a,
+.nav > a:hover,
+.nav > a:link,
+.nav > a:active,
+.nav > a:visited {
+    font-family: Poppins;
+    font-size: 1.7em;
+    font-weight: bold;
+    display: flex;
+    margin-right: 2rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding-top: 81px;
+}
+.welcome-section {
+    color: #ffffff;
+}
+
+.welcome-section > h1 {
+    font-family: Nunito;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.projects {
+    background-color: #ffffff;
+    color: #333591;
+    height: auto;
+}
+
+.cards {
+    display: grid;
+    flex-direction: row;
+    column-gap: 40px;
+    row-gap: 40px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+.card {
+    width: 18rem;
+    background-color: rgb(40, 42, 54);
+    color: #ffffff;
+}
+.card-body > a.btn {
+    font-size: 1em;
+    justify-content: center;
+}
+
+.social {
+    width: 100%;
+    height: 100vh;
+    padding-top: 81px;
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: repeat(4, 25%);
+    align-items: center;
+    justify-content: space-around;
+}
+
+.social > a,
+.social > a:hover,
+.social > a:link,
+.social > a:active,
+.social > a:visited {
+    font-family: Poppins;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.fab {
+    margin-right: 10px;
+}
